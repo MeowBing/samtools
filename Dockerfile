@@ -2,7 +2,7 @@ FROM cuhkhaosun/conda:miniconda
 
 WORKDIR /app
 
-RUN conda install bioconda::samtools
+RUN mamba install samtools
 
 ENV PATH="/app/samtools:${PATH}"
 
